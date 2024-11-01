@@ -22,7 +22,7 @@ contactEmail.verify((error) => {
 });
 
 
-router.post("/register-affiliate", (req, res) => {
+router.post("/", (req, res) => {
   const { firstName, lastName, email, phone, preferredProgram, interest } = req.body;
 
   const mail = {
